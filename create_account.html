@@ -1,0 +1,28 @@
+<!-- CREATE ACCOUNT / Connected to accounts table (DB)-->
+
+<!DOCTYPE html>
+<html>
+    <body>    
+        <h3>Create An Account</h3>
+        
+        <form method="post">
+            <label>Enter your first name:</label><br>
+            <input type="text" name="fname""><br><br>
+
+            <label>Enter your last name:</label><br>
+            <input type="text" name="lname"><br><br>
+
+            <label>Enter your email address:</label><br>
+            <input type="text" name="email"><br><br>
+
+            <label>Enter a username:</label><br>
+            <input type="text" name="username"><br><br>
+
+            <label>Enter a password</label><br>
+            <input type="text" name="password"><br><br>
+
+            <input type="submit"><br><br>
+        </form>
+        <a href="{{ url_for('home') }}">Home Page</a>
+    </body>
+</html>

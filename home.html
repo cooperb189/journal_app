@@ -1,0 +1,18 @@
+<!-- MAIN HOME PAGE-->
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <main>
+            <h1>Journal App</h1>
+            <p>Welcome to the <b>Journal App</b></p>
+        </main>
+        <p>Login to your account in order to enter and
+            access your personal journal entries!</p>
+        <a href="{{ url_for('log_in') }}">Login</a><br><br>
+
+        <p><h4>Don't have an account?</h4>
+            <em>Create an account below to get started.</em></p>
+        <a href="{{ url_for('make_account') }}">Create An Account</a>
+    </body>
+</html>

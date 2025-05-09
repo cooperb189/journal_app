@@ -1,0 +1,30 @@
+<!-- HOME PAGE / Connected to journal table (DB) -->
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <main>
+            <h1>Journal App</h1>
+            <p>Welcome to the journal app! Please fill in the
+                boxes below to submit a new journal entry.</p>
+        </main>
+        <form method="post">
+            <label><strong>Name</strong></label><br>
+            <input type="text" name="name"><br><br>
+
+            <label><strong>Date</strong></label><br>
+            <input type="text" name="date"><br><br>
+
+            <label><strong>Entry</strong></label><br>
+            <textarea rows=10 cols=50 name="entry"></textarea><br><br>
+
+            <input type="submit"><br><br>
+        </form>
+        <ul>
+            {% for date, entry in entries %}
+                <li><b>{{ date }}</b>: {{ entry }}</li>
+            {% endfor %}
+        </ul>
+        <a href="{{ url_for('home') }}">Home Page</a>
+    </body>
+</html>
